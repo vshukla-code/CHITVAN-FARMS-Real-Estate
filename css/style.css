@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ----top header ------- */
+.top-header {
+  background-color: #5e6f1a;
+  color: #fff;
+}
+.top-header .icon {
+  color: orange;
+}
+.top-content a {
+  color: #fff;
+}
+.top-content p {
+  color: rgb(201, 197, 197);
+  padding: 0 5px;
+}
+/* ----top header end ------- */
+.navbar {
+  background-color: #fff9ea;
+}
+.navbar-brand {
+  font-size: 2rem;
+  color: #fd7c01;
+  font-weight: 700;
+}
+.navbar-brand:hover {
+  color: #23527c;
+}
+.navbar a {
+  color: #000;
+  font-weight: 500;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: #fd7c01;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+/* welcome form  */
+
+/* Styling for the heading */
+.welcome-text {
+  font-weight: bold;
+}
+
+/* Highlight specific text */
+.highlight {
+  color: orange;
+}
+
+/* Styling for the underline */
+.underline {
+  width: 100px;
+  height: 3px;
+  background-color: yellow;
+  position: relative;
+  margin-left: 10px; /* Adjusted margin-left to 10px */
+}
+
+/* Dot at the left end of the underline */
+.underline::before {
+  content: "";
+  position: absolute;
+  left: -8px; /* Keeps the dot positioned relative to the line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.uniform-size {
+  width: 100%; /* Makes the image responsive */
+  height: 200px; /* Set a uniform height */
+  object-fit: cover; /* Ensures the image scales and fills the height/width without distortion */
+}
+
+.footer {
+  background-color: #5e6f1a;
+  margin-top: 60px;
+}
+
+.footer a {
+  color: yellow;
+  padding: 0 10px;
+}
+
+.diamond-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(45deg);
+  margin: 10px;
+}
+.diamond {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  position: relative;
+}
+.diamond-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.list-item {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* current status css  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #a363aa;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+/* half border use ke liye  */
+.contact-left-title hr {
+  border: none;
+  width: 130px;
+  height: 5px;
+  background: linear-gradient(orange, indigo);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  cursor: pointer;
+}
+
+.contact-inputs:focus {
+  border: 2px solid #ff994f;
+  border-radius: 50px;
+}
+.contact-inputs::placeholder {
+  color: #a9a9a9;
+}
+.contact-right img {
+  width: 500px;
+}
+
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+  .contact-right {
+    display: none;
+  }
+}
